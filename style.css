@@ -1,42 +1,89 @@
-/* Configuração Geral */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7f6;
-    color: #333;
+/* Configuração Geral e Cores */
+:root {
+    --bg-color: #121214;
+    --card-bg: #1f1f23;
+    --text-primary: #ffffff;
+    --text-secondary: #a9a9b2;
+    --accent-green: #00b37e;
+}
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
     padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #2ecc71;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
-/* Seções (Cards) */
+header h1 {
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+header p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Container Principal dos Blocos */
+main {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo dos Blocos (Cards) */
 section {
-    background-color: white;
+    background-color: var(--card-bg);
+    border-radius: 12px;
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #29292e;
 }
 
-/* Destaque do Score */
-#score-val {
-    font-size: 24px;
+section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #29292e;
+    padding-bottom: 8px;
+    color: var(--text-secondary);
+}
+
+/* Destaques de Texto */
+#score-resultado {
+    font-size: 1.8rem;
     font-weight: bold;
-    color: #27ae60;
+    color: var(--accent-green);
     margin-top: 10px;
 }
 
 /* Rodapé */
 footer {
-    margin-top: 40px;
-    color: #7f8c8d;
-    font-size: 14px;
+    margin-top: auto;
+    padding-top: 40px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    text-align: center;
 }
