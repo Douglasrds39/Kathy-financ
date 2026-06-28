@@ -1,0 +1,42 @@
+/* Configuração Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2ecc71;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Seções (Cards) */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Destaque do Score */
+#score-val {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+    margin-top: 10px;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 40px;
+    color: #7f8c8d;
+    font-size: 14px;
+}
