@@ -1,13 +1,16 @@
-// Simulação de dados do aplicativo Kathy-Financ
+// Função que roda assim que o site carrega totalmente
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Kathy-Financ iniciado com sucesso!");
     
-    // Simulando a busca de um Score de Crédito do Banco Central
-    setTimeout(() => {
-        const scoreElement = document.getElementById("score-val");
-        if (scoreElement) {
-            scoreElement.textContent = "785 (Excelente)";
-            scoreElement.style.color = "#27ae60";
-        }
-    }, 1500); // Demora 1.5 segundos para fingir que está carregando da internet
+    // Procura o campo do Score no HTML
+    const scoreResultado = document.getElementById("score-resultado");
+    
+    // Faz uma simulação de carregamento antes de mostrar o Score
+    if (scoreResultado) {
+        setTimeout(() => {
+            scoreResultado.textContent = "785 (Excelente)";
+            scoreResultado.style.color = "#00b37e"; // Deixa o texto verde
+        }, 1500); // Espera 1 segundo e meio para dar o efeito de análise
+    }
+
+    console.log("Kathy-Financ: JavaScript carregado com sucesso!");
 });
